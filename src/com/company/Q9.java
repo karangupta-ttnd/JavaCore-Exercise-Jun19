@@ -23,8 +23,9 @@ public class Q9 {
                 line = br.readLine();
             }
             System.out.println(sb.toString());
-        }catch(Exception e)
-        {e.printStackTrace();}
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         
     }
     

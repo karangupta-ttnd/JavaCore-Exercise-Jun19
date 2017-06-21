@@ -28,13 +28,13 @@ public class Main
         
         int b[] = new int[n];
         
-        int c[] = new int[m+n];
+        int c[] = new int[m + n];
         
         int d[] = new int[m];
         
         System.out.println("Enter all the elements in first array:");
         
-        for(i = 0; i < m; i++)
+        for (i = 0; i < m; i++)
         
         {
             
@@ -44,7 +44,7 @@ public class Main
         
         System.out.println("Enter all the elements in second array:");
         
-        for(i = 0; i < n; i++)
+        for (i = 0; i < n; i++)
         
         {
             
@@ -52,7 +52,7 @@ public class Main
             
         }
         
-        for(i = 0; i < m; i++)
+        for (i = 0; i < m; i++)
         
         {
             
@@ -60,23 +60,21 @@ public class Main
             
         }
         
-        for(i = 0; i < n; i++)
+        for (i = 0; i < n; i++)
         
         {
             
-            for(int j = 0; j < m; j++)
+            for (int j = 0; j < m; j++)
             
             {
                 
-                if(b[i] != a[j])
+                if (b[i] != a[j])
                 
                 {
                     
                     flag = 1;
                     
-                }
-                
-                else
+                } else
                 
                 {
                     
@@ -88,7 +86,7 @@ public class Main
                 
             }
             
-            if(flag == 1)
+            if (flag == 1)
             
             {
                 
@@ -102,29 +100,29 @@ public class Main
         
         System.out.print("Union:");
         
-        for(i = 0; i < k - 1; i++)
+        for (i = 0; i < k - 1; i++)
         
         {
             
-            System.out.print(c[i]+",");
+            System.out.print(c[i] + ",");
             
         }
         
-        System.out.print(c[k-1]);
+        System.out.print(c[k - 1]);
         
         System.out.println("");
         
         int p = 0;
         
-        for(i = 0; i < n; i++)
+        for (i = 0; i < n; i++)
         
         {
             
-            for(int j = 0; j < m; j++)
+            for (int j = 0; j < m; j++)
             
             {
                 
-                if(b[i] == a[j])
+                if (b[i] == a[j])
                 
                 {
                     
@@ -132,9 +130,7 @@ public class Main
                     
                     break;
                     
-                }
-                
-                else
+                } else
                 
                 {
                     
@@ -144,7 +140,7 @@ public class Main
                 
             }
             
-            if(flag == 1)
+            if (flag == 1)
             
             {
                 
@@ -158,23 +154,21 @@ public class Main
         
         System.out.print("Intersection:");
         
-        if(p > 1)
+        if (p > 1)
         
         {
             
-            for(i = 0; i < p - 1; i++)
+            for (i = 0; i < p - 1; i++)
             
             {
                 
-                System.out.print(d[i]+",");
+                System.out.print(d[i] + ",");
                 
             }
             
-            System.out.print(d[p-1]);
+            System.out.print(d[p - 1]);
             
-        }
-        
-        else
+        } else
         
         {
             

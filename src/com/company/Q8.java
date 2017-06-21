@@ -7,16 +7,16 @@ import java.util.Scanner;
 public class Q8 {
     
     public static void main(String[] args) {
-    
+        
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a string:");
         StringBuffer mainString = new StringBuffer();
         mainString.append(input.nextLine());
         
-        mainString=mainString.reverse();
+        mainString = mainString.reverse();
         System.out.println("Reversed StringBuffer Content : " + mainString);
-    
-        mainString.delete(4,10);
+        
+        mainString.delete(4, 10);
         System.out.println(mainString);
         
     }
